@@ -1,0 +1,43 @@
+
+1)Explain about    the following    values of type attribute of <input> element.Also provide 
+sample code using these values of attribute. 
+ (note: <input type ="date"> )  
+ Date 
+ Color 
+ range 
+ tel
+The date input type allows users to select a date from a calendar widget.
+<label for="birthday">Birthday:</label>
+<input type="date" id="birthday" name="birthday">
+The color input type allows users to select a color from a color picker
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+The range input type allows users to select a value from a range of values using a slider.
+<label for="points">Points (between 0 and 10):</label>
+<input type="range" id="points" name="points" min="0" max="10">
+The tel input type allows users to enter a telephone number.
+<label for="phone">Enter your phone number:</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+2)Explain about following attributes of <input> element 
+ required 
+When present, it specifies that an input field must be filled out before submitting the form.
+<input type="text" id="username" name="username" required>
+
+ multiple 
+When present, it specifies that multiple options can be selected at once.
+<select name="cars" id="cars" multiple></select>
+ disabled 
+When present, it specifies that the element should be disabled
+<button type="button" disabled>Click Me!</button>
+ readonly 
+When present, it specifies that an input field is read-only.
+<input readonly>
+ maxlength
+The maxlength attribute specifies the maximum number of characters allowed in the <input> element.
+<input maxlength="number">
+
+3)
+Type: button
+The type="button" attribute creates a generic button that does not have any default behavior.
+<button type="button" onclick="alert('Button clicked!')">Click Me</button>
